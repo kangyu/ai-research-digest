@@ -1,0 +1,57 @@
+baseURL = "https://YOUR_GITHUB_USERNAME.github.io/ai-research-digest/"
+languageCode = "zh-CN"
+title = "AI 研究日报"
+theme = "PaperMod"
+paginate = 20
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[params]
+  author = "AI Research Digest"
+  description = "每日追踪 Anthropic、OpenAI、Google DeepMind 等顶尖 AI 公司的最新动态"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowFullTextinRSS = true
+
+  [params.homeInfoParams]
+    Title = "AI 研究日报"
+    Content = "每日自动整理 Anthropic、OpenAI、Google DeepMind、Meta AI 等顶尖机构的最新博客与研究文章，按领域分类，中文摘要。"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/ai-research-digest/index.xml"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/YOUR_GITHUB_USERNAME/ai-research-digest"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archive"
+    name = "归档"
+    url = "/archives/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
