@@ -1,4 +1,4 @@
-baseURL = "https://YOUR_GITHUB_USERNAME.github.io/ai-research-digest/"
+baseURL = "https://kangyu.github.io/ai-research-digest/"
 languageCode = "zh-CN"
 title = "AI 研究日报"
 theme = "PaperMod"
@@ -30,7 +30,7 @@ buildFuture = false
 
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/YOUR_GITHUB_USERNAME/ai-research-digest"
+    url = "https://github.com/kangyu/ai-research-digest"
 
 [taxonomies]
   category = "categories"
